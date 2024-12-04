@@ -1,0 +1,29 @@
+.canvas { margin-left: 20%; }
+
+.control {
+    display: flex;
+    column-gap: 10px;
+}
+
+.messages {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+#selected-period {color: green;}
+#error-field {color: red;}
+
+table {
+    margin-top: 20px;
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 40%;
+    text-align: center;
+}
+th {
+    border: 1px solid black;
+    background-color: lightgray;
+}
+td { border: 1px solid black; }

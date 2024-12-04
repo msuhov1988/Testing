@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Отчет по заявкам</title>
+      <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+  </head>
+  <body>
+      <div class="canvas">
+          <h1>Отчет по заявкам</h1>
+          <div class="control">
+              <input type="date" id="first-date"/>
+              <input type="date" id="second-date"/>
+              <input type="button" id="load" value="Получить данные"/>
+          </div>
+          <div class="messages">
+              <span id="selected-period">Период: все</span>
+              <span id="error-field"></span>
+          </div>
+          <table id="table">
+              <thead>
+                  <tr>
+                      <th style="width: 20%;">Название</th>
+                      <th style="width: 10%;">За указанный период</th>
+                      <th style="width: 10%;">За все время</th>
+                  </tr>
+              </thead>
+              <tbody>
+              </tbody>
+          </table>
+      </div>
+      <script defer src="{% static 'scripts.js' %}"></script>
+  </body>
+</html>
