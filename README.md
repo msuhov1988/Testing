@@ -7,8 +7,8 @@ git clone https://github.com/msuhov1988/Testing
 python -m venv venv
 
 Активируйте окружение:
-windows: venv\Scripts\activate
-linux:   source venv/bin/activate  
+windows: venv\Scripts\activate,
+linux:   source venv/bin/activate 
 
 Убедитесь, что вы находитесь в корневой директории проекта, и выполните следующую команду:
 pip install -r requirements.txt
